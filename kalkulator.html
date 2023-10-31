@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kalkulator</title>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+<body>
+    <div class="top">
+    <h2>Kalkulator</h2>
+</div>
+<div class="left">
+    <a href="main.html"> powrot</a>
+</div>
+    <div class="middle">
+    <input type="number" id="num1" placeholder="Liczba 1" required>
+    <select id="operator">
+        <option value="Dodawanie">Dodawanie</option>
+        <option value="Odejmowanie">Odejmowanie</option>
+        <option value="Mnożenie">Mnożenie</option>
+        <option value="Dzielenie">Dzielenie</option>
+        <option value="Pierwiastek">Pierwiastek</option>
+        <option value="Potęgowanie">Potęgowanie</option>
+        <option value="Średnia">Średnia</option>
+        <option value="Największa">większa liczba</option>
+        <option value="Najmniejsza">mniejsza liczba</option>
+        <option value="Moduł">Moduł</option>
+    </select>
+    <input type="number" id="num2" placeholder="Liczba 2" required>
+    <button onclick="calculate()">Oblicz</button>
+    <p>Wynik: <span id="result"></span></p>
+</div>
+
+    <script>
+        function calculate() {
+            var num1 = parseFloat(document.getElementById("num1").value);
+            var num2 = parseFloat(document.getElementById("num2").value);
+            var operator = document.getElementById("operator").value;
+            var result = '';
+
+            switch (operator) {
+                case 'Dodawanie':
+                    result = num1 + num2;
+                    break;
+                case 'Odejmowanie':
+                    result = num1 - num2;
+                    break;
+                case 'Mnożenie':
+                    result = num1 * num2;
+                    break;
+                case 'Dzielenie':
+                    if (num2 !== 0) {
+                        result = num1 / num2;
+                    } else {
+                        result = 'Nie można dzielić przez zero';
+                    }
+                    break;
+                case 'Pierwiastek':
+                    result = Math.sqrt(num1);
+                    break;
+                case 'Potęgowanie':
+                    result = Math.pow(num1, num2);
+                    break;
+                case 'Średnia':
+                    result = (num1 + num2) / 2;
+                    break;
+                case 'Największa':
+                    result = Math.max(num1, num2);
+                    break;
+                case 'Najmniejsza':
+                    result = Math.min(num1, num2);
+                    break;
+                case 'Moduł':
+                    result = Math.abs(num1);
+                    break;
+                default:
+                    result = 'Nieznany operator';
+            }
+
+            document.getElementById("result").textContent = result;
+        }
+    </script>
+    
+    <div class="right"></div>
+    <div class="footer"></div>
+    </body>
+</html>

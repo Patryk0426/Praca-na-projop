@@ -1,0 +1,38 @@
+.top {
+    background-color: #484b4d;
+    text-align: center;
+    padding: 20px;
+    text-align: center;
+    height: 15%;
+}
+
+.left {
+    background-color: #949695;
+    width: 15%;
+    float: left;
+    padding: 20px;
+    height: 700px;
+}
+
+.middle {
+    background-color: #e7dede;
+    width: 60%;
+    float: left;
+    height: 740px;
+}
+
+.right {
+    background-color: #e7e7e7;
+    width: 391px;
+    float: left;
+    height: 700px;
+    padding: 20px;
+}
+
+.footer {
+    background-color: #34495e;
+    clear: both;
+    text-align: center;
+    padding: 20px;
+    height: 100px;
+}
