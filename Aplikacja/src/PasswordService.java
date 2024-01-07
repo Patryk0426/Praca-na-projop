@@ -7,7 +7,7 @@ public class PasswordService {
       while(true)
               try {
         Scanner writer = new Scanner(System.in);
-        System.out.println("Wybierz rodzaj hasła: \n 1.Małę litery \n2.Duże litery\n3.Mix\n0.Koniec");
+        System.out.println("Wybierz rodzaj hasła: \n1.Małe litery \n2.Duże litery\n3.Mix \n4.Małe litery i liczby\n5.Duże litery i liczby\n6.wszystko \n0.Koniec ");
         String password = "";
         String passTypeNr = writer.next();
         if(passTypeNr.equals("0"))
@@ -34,6 +34,15 @@ public class PasswordService {
                 break;
             case "3":
                 password = _generator.GeneratePassword(PasswordTypes.MixedCaseLetter, len);
+                break;
+            case "4":
+                password = _generator.GeneratePassword(PasswordTypes.LowerAndNumber, len);
+                break;
+            case "5":
+                password = _generator.GeneratePassword(PasswordTypes.UpperAndNumber, len);
+                break;
+            case "6":
+                password = _generator.GeneratePassword(PasswordTypes.ALL, len);
                 break;
             case "0":
              return;

@@ -20,7 +20,7 @@ class Calculator {
             return a / b;
         } else {
             System.out.println("Nie można dzielić przez zero.");
-            return Double.NaN; // NaN - Not a Number
+            return Double.NaN;
         }
     }
 

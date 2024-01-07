@@ -17,7 +17,6 @@ public class Main {
                 CalculatorRunner cal = new CalculatorRunner();
                 cal.runCalculator();
                 break;
-            default:System.out.println("nie ma takiej funkcji");
         }
     }
 }
