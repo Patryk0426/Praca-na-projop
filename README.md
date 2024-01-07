@@ -10,6 +10,7 @@ zad3
 
 wersja 0.1.0
 - przepisałem aplikacje na jezyk java czyli ze strony interentowej aplikacja zamnieniła się na aplikacje konsolowa
+
 wersja 0.1.1
 - do generatora haseł dodałem  funkcje z cyframi
   
