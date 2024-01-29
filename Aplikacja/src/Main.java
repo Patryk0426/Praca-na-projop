@@ -7,6 +7,7 @@ public class Main {
         System.out.println("wybierz odpowiednią funkcje");
         System.out.println("1. Generator Haseł");
         System.out.println("2. Kalkulator");
+        System.out.println("3. Licznik słow");
         int choice = scanner.nextInt();
         switch(choice) {
             case (1):
@@ -17,6 +18,11 @@ public class Main {
                 CalculatorRunner cal = new CalculatorRunner();
                 cal.runCalculator();
                 break;
+            case (3):
+                WordCounter wc = new WordCounter();
+                wc.Runner();
+                break;
+
         }
     }
 }

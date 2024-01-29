@@ -21,7 +21,6 @@ import java.util.Scanner;
 
             double result = 0;
 
-            // Wybór operacji
             switch (choice) {
                 case 1:
                     result = Calculator.add(num1, num2);
@@ -46,7 +45,6 @@ import java.util.Scanner;
                     return;
             }
 
-            // Wyświetlenie wyniku
             System.out.println("Wynik: " + result);
         }
     }
