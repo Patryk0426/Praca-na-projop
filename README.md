@@ -14,3 +14,5 @@ wersja 0.1.0
 wersja 0.1.1
 - do generatora haseł dodałem  funkcje z cyframi
   
+wersja 0.2 
+- dodalem funkcje liczenia słow w tekscie
