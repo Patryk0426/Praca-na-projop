@@ -16,3 +16,9 @@ wersja 0.1.1
   
 wersja 0.2 
 - dodalem funkcje liczenia słow w tekscie
+- przeprowadziłem test Aplikacji :
+  - Moduł kalkulatora jest w pełni sprawny
+  - Moduł generatora haseł jest w pełni sprawny
+  - Moduł licznika słów jest w pełni sprawny
+co oznacza że wszystkie funkcje w aplikacji działaja poprawnie
+
