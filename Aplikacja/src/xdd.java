@@ -5,7 +5,7 @@ public class xdd {
             return 0;
         }
 
-        String[] slowa = tekst.split("\\s+"); // Rozdzielanie tekstu na słowa
+        String[] slowa = tekst.split("\\s+");
 
         return slowa.length;
     }

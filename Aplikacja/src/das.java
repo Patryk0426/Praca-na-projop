@@ -1,51 +1,52 @@
 import java.util.Scanner;
     class CalculatorRunner {
         public static void runCalculator() {
-            Scanner scanner = new Scanner(System.in);
 
-            System.out.print("Podaj pierwszą liczbę: ");
-            double num1 = scanner.nextDouble();
+                Scanner scanner = new Scanner(System.in);
 
-            System.out.print("Podaj drugą liczbę: ");
-            double num2 = scanner.nextDouble();
+                System.out.print("Podaj pierwszą liczbę: ");
+                double num1 = scanner.nextDouble();
 
-            System.out.println("Wybierz operację:");
-            System.out.println("1. Dodawanie");
-            System.out.println("2. Odejmowanie");
-            System.out.println("3. Mnożenie");
-            System.out.println("4. Dzielenie");
-            System.out.println("5. Potęgowanie");
-            System.out.println("6. Pierwiastkowanie");
+                System.out.print("Podaj drugą liczbę: ");
+                double num2 = scanner.nextDouble();
 
-            int choice = scanner.nextInt();
+                System.out.println("Wybierz operację:");
+                System.out.println("1. Dodawanie\n2. Odejmowanie\n3. Mnożenie\n4. Dzielenie\n 5. Potęgowanie \n 6. Pierwiastkowanie \n 0. Zakończ1");
 
-            double result = 0;
+                int choice = scanner.nextInt();
 
-            switch (choice) {
-                case 1:
-                    result = Calculator.add(num1, num2);
-                    break;
-                case 2:
-                    result = Calculator.subtract(num1, num2);
-                    break;
-                case 3:
-                    result = Calculator.multiply(num1, num2);
-                    break;
-                case 4:
-                    result = Calculator.divide(num1, num2);
-                    break;
-                case 5:
-                    result = Calculator.power(num1, num2);
-                    break;
-                case 6:
-                    result = Calculator.squareRoot(num1);
-                    break;
-                default:
-                    System.out.println("Nieprawidłowy wybór operacji.");
-                    return;
+                double result = 0;
+
+                switch (choice) {
+                    case 1:
+                        result = Calculator.add(num1, num2);
+                        break;
+                    case 2:
+                        result = Calculator.subtract(num1, num2);
+                        break;
+                    case 3:
+                        result = Calculator.multiply(num1, num2);
+                        break;
+                    case 4:
+                        result = Calculator.divide(num1, num2);
+                        break;
+                    case 5:
+                        result = Calculator.power(num1, num2);
+                        break;
+                    case 6:
+                        result = Calculator.squareRoot(num1);
+                        break;
+                    case 0 :
+                        break;
+                    default:
+                        System.out.println("Nieprawidłowy wybór operacji.");
+                        return;
+                }
+
+                System.out.println("Wynik: " + result);
+
             }
 
-            System.out.println("Wynik: " + result);
         }
-    }
+
 

@@ -15,7 +15,7 @@ public class PasswordService {
                       break;
            }
         System.out.println("Podaj długosc hasła :");
-        var len = writer.nextInt();
+        int len = writer.nextInt();
 
         while (len ==0)
         {
@@ -51,7 +51,7 @@ public class PasswordService {
     }
         catch (Exception ex)
     {
-        System.out.println("Password Generator Error:  "+ ex.getMessage() );
+
     }
 }
 }
