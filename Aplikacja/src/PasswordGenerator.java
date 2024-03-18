@@ -1,30 +1,30 @@
 import java.util.Random;
 public    class PasswordGenerator {
-    private   String _lowercase = "qwertyuiopasdfghjklzxcvbnm";
-    private   String _uppercase = "QWERTYUIOPASDFGHJKLZXCVBNM";
-    private   String _number = "1234567890";
+    private   String lowercase = "qwertyuiopasdfghjklzxcvbnm";
+    private   String uppercase = "QWERTYUIOPASDFGHJKLZXCVBNM";
+    private   String number = "1234567890";
     public   String GeneratePassword(PasswordTypes passwordType, int size) throws Exception {
         String chars;
         Random rnd = new Random();
         String password = "";
         switch (passwordType) {
             case LowercaseLetterOnly:
-                chars = _lowercase;
+                chars = lowercase;
                 break;
             case MixedCaseLetter:
-                chars = _lowercase + _uppercase;
+                chars = lowercase + uppercase;
                 break;
             case UppercaseLettersOnly:
-                chars =  _uppercase;
+                chars =  uppercase;
                 break;
             case LowerAndNumber :
-                chars = _lowercase + _number;
+                chars = lowercase + number;
                 break;
             case UpperAndNumber :
-                chars = _number + _uppercase;
+                chars = number + uppercase;
                 break;
             case ALL:
-                chars = _lowercase + _uppercase + _number;
+                chars = lowercase + uppercase + number;
                 break;
 
             default:
