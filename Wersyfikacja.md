@@ -17,3 +17,9 @@ co oznacza że wszystkie funkcje w aplikacji działaja poprawnie
 
 wersja 0.4
 - kod został zoptymalizowany
+
+Wersja 1.0
+- Końcowa wersja aplikacji
+- Wszystkie moduly zostały przetestowane i są w pełni sprawne
+- Interfejs aplikacji uległ polepszeniu
+
