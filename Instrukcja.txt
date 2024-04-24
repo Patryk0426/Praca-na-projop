@@ -1,0 +1,4 @@
+Aby uruchomic projekt trzeba:
+1. po pobraniu projektu przjeść do folderu src
+2. uruchomic plik Main.java za pomocą IDE obslugujacego jave(program byl robiony na IDE Intelij)
+
